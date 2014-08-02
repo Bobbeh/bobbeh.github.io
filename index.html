@@ -1,7 +1,111 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<style>
+	@keyframes legs {
+  0% { opacity: 1; }
+  4% { transform: scale(1.03) translateY(1px) translateX(-3px);
+    opacity: 1; }
+  10% { transform: scale(1) translateX(0) translateY(0); 
+    opacity: 1; }
+  100% { opacity: 1; }
+}
+
+@keyframes mouth {
+  0% { opacity: 1; }
+  4% { transform: scale(1.1) translateX(-10px) translateY(2px); 
+    opacity: 1; }
+  10% { transform: scale(1) translateX(0) translateY(0); 
+    opacity: 1; }
+  100% { opacity: 1; }
+}
+
+@keyframes rightleg {
+  0% { opacity: 1; }
+  5% { transform: rotate(15deg)  translateY(-42px) translateX(25px); opacity: 1;}
+  15% { opacity: 1; }
+  60% { transform: rotate(0)  translateY(0) translateX(0); opacity: 1;}
+  100% { opacity: 1; }
+}
+
+@keyframes eye-left {
+  0% { opacity: 1; }
+  5% { transform: rotate(20deg) translateY(-35px) translateX(6px); opacity: 1;}
+  15% { opacity: 1; }
+  40% { opacity: 0; }
+  60% { transform: rotate(0)  translateY(0) translateX(0); opacity: 0;}
+  100% { opacity: 0; }
+}
+@keyframes right-eye {
+  0% { opacity: 1; }
+  4% {   opacity: 1; transform: translateY(-2px);}
+  10% {  opacity: 1; }
+  100% { opacity: 1; }
+}
+.mouth{
+/*animation*/
+-webkit-animation:mouth 5s ease infinite;
+   -moz-animation:mouth 5s ease infinite;
+    -ms-animation:mouth 5s ease infinite;
+     -o-animation:mouth 5s ease infinite;
+        animation:mouth 5s ease infinite;
+}
+#body{
+/*animation*/
+-webkit-animation:legs 5s ease infinite;
+   -moz-animation:legs 5s ease infinite;
+    -ms-animation:legs 5s ease infinite;
+     -o-animation:legs 5s ease infinite;
+        animation:legs 5s ease infinite;
+}
+#right_eye_emo, #left_eye_emo{
+/*animation*/
+-webkit-animation:right-eye 5s infinite;
+   -moz-animation:right-eye 5s infinite;
+    -ms-animation:right-eye 5s infinite;
+     -o-animation:right-eye 5s infinite;
+        animation:right-eye 5s infinite;
+}
+
+
+
+
+
+		
+
+
+	</style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+ <svg class="frog" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="400px"  viewBox="0 0 225 150" enable-background="new 0 0 225 150" xml:space="preserve">
+
+          <ellipse class="shadow" fill="#E8E8E8" cx="112.368" cy="133.762" rx="70.229" ry="5.551"/>
+          <path id="leg_right_bg" fill="#60A644" class="color-spots" d="M109.021 115.336c6.788 15.992 25.254 23.452 41.247 16.664 15.991-6.788 23.453-25.254 16.665-41.246 -0.061-0.144-24.229-57.057-24.292-57.198L84.75 58.129C84.809 58.271 108.959 115.193 109.021 115.336z"/>
+          <path id="leg_right" fill="#6DB544" class="color-skin" d="M181.602 133.864c-1.688-6.881-8.781-12.225-17.625-13.125 5.08-7.485 6.849-17.023 4.295-26.142 -1.354 1.639-3.402 2.683-5.693 2.683 -4.077 0-7.383-3.305-7.383-7.382s3.306-7.383 7.383-7.383c0.299 0 0.592 0.023 0.881 0.058 -6.702-15.783-20.771-48.91-20.818-49.018L84.75 58.129c0.059 0.143 24.209 57.064 24.271 57.207 5.954 14.028 20.894 21.489 35.269 18.528H181.602zM151.071 68.831c2.022 0 3.662 1.64 3.662 3.662s-1.64 3.662-3.662 3.662 -3.663-1.64-3.663-3.662S149.049 68.831 151.071 68.831zM139.313 126.637c0-2.204 1.786-3.99 3.989-3.99 1.691 0 3.133 1.054 3.714 2.538 -1.966 1.502-3.56 3.307-4.657 5.324C140.611 130.084 139.313 128.514 139.313 126.637z"/>
+          <linearGradient id="left_arm_gradient" gradientUnits="userSpaceOnUse" x1="159.125" y1="133.8262" x2="159.125" y2="79.9854">
+            <stop offset="0" class="gradient-0" stop-color="#7CC242" />
+            <stop offset="1" class="gradient-1" stop-color="#6DB544"/>
+          </linearGradient>
+          <path id="left_arm" fill="url(#left_arm_gradient)" d="M158.2 123.494c-0.489 0-0.972 0.018-1.449 0.052V79.985h-12.497v53.841h12.497 17.245C172.552 127.939 166.03 123.494 158.2 123.494z"/>
+          <path id="leg_left_bg" class="color-spots" fill="#60A644" d="M116.228 115.336C109.44 131.328 90.974 138.788 74.981 132c-15.992-6.788-23.454-25.254-16.665-41.246 0.061-0.144 24.229-57.057 24.292-57.198l57.89 24.573C140.439 58.271 116.289 115.193 116.228 115.336z"/>
+          <path id="leg_right" class="color-skin" fill="#6DB544" d="M80.958 133.864c14.375 2.961 29.315-4.5 35.269-18.528 0.062-0.143 24.212-57.064 24.271-57.207l-57.89-24.573C82.56 33.664 68.492 66.79 61.79 82.573c0.289-0.034 0.582-0.058 0.881-0.058 4.077 0 7.382 3.306 7.382 7.383s-3.305 7.382-7.382 7.382c-2.292 0-4.339-1.044-5.693-2.683 -2.554 9.118-0.786 18.656 4.294 26.142 -8.843 0.9-15.936 6.244-17.625 13.125H80.958zM77.84 72.493c0 2.022-1.64 3.662-3.663 3.662 -2.022 0-3.662-1.64-3.662-3.662s1.64-3.662 3.662-3.662C76.2 68.831 77.84 70.471 77.84 72.493zM82.89 130.509c-1.098-2.018-2.692-3.822-4.658-5.324 0.581-1.484 2.022-2.538 3.713-2.538 2.203 0 3.99 1.786 3.99 3.99C85.935 128.514 84.636 130.084 82.89 130.509z"/>
+          <linearGradient id="right_arm_gradient" gradientUnits="userSpaceOnUse" x1="225.3447" y1="133.8262" x2="225.3447" y2="79.9854" gradientTransform="matrix(-1 0 0 1 291.4688 0)">
+            <stop offset="0" class="gradient-0" stop-color="#7CC242"/>
+            <stop offset="1" class="gradient-1" stop-color="#6DB544"/>
+          </linearGradient>
+          <path id="right_arm" fill="url(#right_arm_gradient)" d="M67.049 123.494c0.488 0 0.972 0.018 1.449 0.052V79.985h12.497v53.841H68.498 51.252C52.697 127.939 59.218 123.494 67.049 123.494z"/>
+          <path id="body" class="color-body" fill="#E6DFB3" d="M81.219 103.256c0 17.373 14.083 31.457 31.457 31.457 17.374 0 31.458-14.084 31.458-31.457 0-0.155-0.01-61.988-0.012-62.143H81.23C81.229 41.268 81.219 103.101 81.219 103.256z"/>
+          <circle id="head_back" fill="#624831" cx="112.676" cy="41.576" r="30.84"/>
+          <path id="head_bg" class="color-spots" fill="#60A644" d="M143.813 41.113c-0.249-16.989-14.09-30.686-31.137-30.686 -17.048 0-30.888 13.697-31.136 30.686H143.813z"/>
+          <path id="head_cutout" class="color-skin" fill="#6DB544" d="M115.311 10.546c-0.133 4.342-3.685 7.823-8.058 7.823 -3.418 0-6.333-2.128-7.509-5.129C89.133 18.093 81.72 28.724 81.539 41.113h62.273C143.576 25.01 131.126 11.873 115.311 10.546zM103.397 33.429c-2.101 0-3.803-1.703-3.803-3.804 0-2.101 1.703-3.803 3.803-3.803 2.101 0 3.804 1.703 3.804 3.803C107.201 31.727 105.499 33.429 103.397 33.429zM120.359 37.9c-4.428 0-8.018-3.589-8.018-8.018 0-4.428 3.59-8.018 8.018-8.018 4.429 0 8.019 3.59 8.019 8.018C128.378 34.311 124.788 37.9 120.359 37.9zM135.651 37.85c-2.115 0-3.829-1.715-3.829-3.83s1.714-3.829 3.829-3.829 3.829 1.714 3.829 3.829S137.767 37.85 135.651 37.85z"/>
+          <path id="mouth" class="mouth" fill="#FFFAD8" d="M81.219 41.576c0 17.373 14.083 31.456 31.457 31.456 17.374 0 31.458-14.083 31.458-31.456 0-0.155-0.01-0.309-0.012-0.463H81.23C81.229 41.268 81.219 41.421 81.219 41.576z"/>
+          <circle id="right_eye_white" fill="#FFFFFF" cx="134.88" cy="19.757" r="8.173"/>
+          <path id="right_eye_black" fill="#353635" d="M138.148 19.301c-1.717 0-3.107-1.391-3.107-3.107 0-0.739 0.268-1.409 0.699-1.942 -0.23-0.028-0.463-0.047-0.699-0.047 -3.155 0-5.712 2.557-5.712 5.712 0 3.154 2.557 5.711 5.712 5.711 3.154 0 5.711-2.558 5.711-5.711 0-0.594-0.09-1.167-0.26-1.706C139.924 18.873 139.09 19.301 138.148 19.301z"/>
+          <path id="right_eye_emo"  fill="#FFFFFF" d="M128.447 24.787c1.419-0.824 3.578-1.351 5.996-1.351 2.768 0 5.188 0.69 6.555 1.726 -1.496 1.693-3.68 2.767-6.117 2.767C132.266 27.929 129.943 26.698 128.447 24.787z"/>
+          <circle id="left_eye_white" fill="#FFFFFF" cx="91.704" cy="19.757" r="8.173"/>
+          <path id="left_eye_black" fill="#353635" d="M88.437 19.301c1.716 0 3.107-1.391 3.107-3.107 0-0.739-0.269-1.409-0.699-1.942 0.229-0.028 0.462-0.047 0.699-0.047 3.155 0 5.711 2.557 5.711 5.712 0 3.154-2.557 5.711-5.711 5.711s-5.712-2.558-5.712-5.711c0-0.594 0.091-1.167 0.26-1.706C86.661 18.873 87.495 19.301 88.437 19.301z"/>
+          <path id="left_eye_emo" fill="#FFFFFF" d="M98.137 24.787c-1.418-0.824-3.577-1.351-5.996-1.351 -2.767 0-5.188 0.69-6.555 1.726 1.497 1.693 3.68 2.767 6.118 2.767C94.318 27.929 96.641 26.698 98.137 24.787z"/>
+        </svg>
+
 </body>
 </html>
